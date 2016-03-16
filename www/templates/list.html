@@ -1,9 +1,15 @@
 
-  <ion-header-bar class="bar-positive">
-  <button class="button button-icon ion-minus-circled" ng-click="data.showDelete = !data.showDelete; data.showReorder = false;"></button>
-    <h2 class="title">Artist list</h2>
-    <button class="button button-icon ion-navicon" ng-click="data.showReorder = !data.showReorder; data.showDelete = false;"></button>
-  </ion-header-bar>
+<ion-view view-title="Artist List">
+<ion-nav-buttons side="primary">
+  <button class="button button-icon ion-minus-circled" ng-click="data.showDelete = !data.showDelete; data.showReorder = false;">
+  </button>
+  </ion-nav-buttons>
+
+<ion-nav-buttons side="secondary">
+    <button class="button button-icon ion-navicon" ng-click="data.showReorder = !data.showReorder; data.showDelete = false;">
+
+    </button>
+</ion-nav-buttons>
   <div class="bar bar-subheader item-input-inset bar-light">
     <label class="item-input-wrapper">
       <i class="icon ion-search placeholder-icon"></i>
@@ -32,3 +38,4 @@
       </ion-item>
     </ion-list>
   </ion-content>
+  </ion-view>
